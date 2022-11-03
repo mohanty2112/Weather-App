@@ -1,23 +1,23 @@
 import React from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Myimage from "./Assets/logo.gif";
 
 
 const Layout = () => {
 
-  const navigate = useNavigate();
-  const home = () => {
-    navigate("/", true)  ;
-  };
+  // const navigate = useNavigate();
+  // const home = () => {
+  //   navigate("/", true)  ;
+  // };
 
-  const getweather = () => {
-    navigate("/getweather", true);
-  };
+  // const getweather = () => {
+  //   navigate("/getweather", true);
+  // };
 
-  const tempcoverter = () => {
-    navigate("/tempcoverter", true);
-  };
+  // const tempcoverter = () => {
+  //   navigate("/tempcoverter", true);
+  // };
 
 
 
@@ -30,6 +30,7 @@ const Layout = () => {
             <nav>
                 <ul>
                     <li> <img
+                    aria-hidden
             className="img2"
             src={Myimage}
             alt="Image"
